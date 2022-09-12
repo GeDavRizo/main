@@ -70,18 +70,18 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(240, 216, 170);
-
+  cursor: pointer;
 }
 
 .navbar {
-  gap: 100px;
+  gap: 50px;
 
 }
 
 .navbar-list {
-  gap: 60px;
+  gap: 30px;
 }
 
 .navbar-list a {
