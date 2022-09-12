@@ -1,221 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+:root{
+  /* bg colors */
+   --background: black;
+   /* text colors */
+   --text-wheat: wheat;
+   --text-negrita: rgb(255, 175, 25);
+   /* Decoration */
+   --fire: #ff6d00;
+   --electric: #64d3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredericka the Great", cursive;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+header {
+  background: var(--background);
+  width: 135%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 30px 0px 30px;
+  position: fixed;
+  top: 0;
+
+}
 
 /* VIDEO */
-
-body {
-    margin: 0;
-  }
-  .sect {
-    width: 3000%;
-    min-height: 500px;
-  }
-  #sect1,
-  video {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 120%;
-    z-index: -1;
-  }
-  /* VIDEO */
-
-  h1 {
-    margin: 0;
-    padding-top: 3rem;
-    padding-left: 2rem;
-  }
-  h2 {
-    margin: 0;
-    padding-top: 3rem;
-    padding-left: 2rem;
-  }
-
-  /*VIDEO */
-
-.h1 {
-    color: wheat;
-    font-family: 'Poppins';
-    font-size: 35px;
-    font-weight: bold;
-    font-size:20px;
-    text-align: center;
-    letter-spacing: 11px;
-    }
-
-.imagen {
-   background-image: url('./Eu.jpg'); 
-   border-radius: 4rem;
-   
-    margin: 30px;
-    float: right;
-    width: 450px;
-    height: 450px;
-    background-size: contain;
-    
-    /*
-    -webkit-filter: blur(1150px);
-    -webkit-transition: ease 17s all;
-    transition: ease 17s all;
-    */
-      
-
-    }
-
-.datosPersonales {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-   
+.sect {
+  width: 50%;
+  min-height: 50px;
 }
-.contenido-dP {
-    font-size: 15px;
-    margin: 15px;
-    font-family: 'Poppins';
-    text-align: justify;
-    color: white;
+#sect1,
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 120%;
+  z-index: -1;
+  opacity: 88%;
+}
+.video {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+/*LOGO */
+.logo {
+  margin: 5px;
+  margin-top: 5px;
+  border-radius: 3rem;
+  height: 90%;
+  background-size: cover;
+ }
+
+ /* NAVBAR */
+.navbar,
+.navbar-list {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: rgb(240, 216, 170);
 
 }
 
-.intereses {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-   
-}
-.contenidoInt {
-    font-size: 20px;
-    margin: 0px;
-    font-family: 'Poppins';
-    text-align: justify;
-    color: white;
+.navbar {
+  gap: 100px;
 
 }
 
-.clasesP {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-   
-}
-.clasesHorarios {
-    font-size: 20px;
-    margin: 0px;
-    font-family: 'Poppins';
-    text-align: center;
-    color: white;
+.navbar-list {
+  gap: 60px;
 }
 
-.horariosC {
-    font-size: 20px;
-    font-family: 'Poppins';
-    color: white;
-    word-spacing: 20px;
-    
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.seleccionDH {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.opcionesDH {
-    font-size: 20px;
-    font-family: 'Poppins';
-    color: white;
-    word-spacing: 10px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 28px;
+.navbar-list a {
+  color: var(--text-wheat);
+  font-size: 35px;
 
 }
 
-.interes {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.datosEstudiante {
-    font-size: 20px;
-    font-family: 'Poppins';
-    color: white;
-    word-spacing: 30px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 28px;
+.navbar-list li:first-child > a {
+  color: var(--text-negrita);
+  font-weight: 600;
 
 }
 
-.disciplina {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.disciplinaInt {
-    
-    margin-bottom: 30px;
-}
-
-.materiasInteres {
-    margin: 5;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.materias {
-    font-size: 20px;
-    font-family: 'Poppins';
-    color: white;
-    word-spacing: 5px;
-    text-align: left;
-    font-weight: bold;
-    margin-left: 43%;
-    margin-bottom: 30px;
-}
-
-.espectativasC {
-  
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.enviar {
-  
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-weight: bold;
-    color: wheat;
-    text-align: center;
-}
-
-.botonEnviar {
-
-   
-
+/* ICONO CARRITO */
+.cart-icon {
+  border: 3px solid wheat;
+  padding: 12px 18px;
+  margin-top: 0px;
+  border-radius: 18px;
+  height: 60px;
+  font-weight: 600;
+  cursor: pointer;
 }
