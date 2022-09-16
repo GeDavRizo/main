@@ -3,7 +3,7 @@
 :root{
   /* bg colors */
    --background: rgb(30, 27, 27);
-   --background-section: rgb(34, 1, 1);
+   --background-section: rgba(105, 101, 101, 0.323);
    /* text colors */
    --text-wheat: wheat;
    --text-negrita: rgb(255, 175, 25);
@@ -23,7 +23,7 @@
 }
 
 header {
-  background: var(--background);
+  background: linear-gradient(to bottom, wheat, var(--background) 40%);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -62,6 +62,8 @@ video {
   border-radius: 2rem;
   height: 90%;
   background-size: cover;
+  opacity: 87%;
+
  }
 
  /* NAVBAR */
@@ -99,18 +101,17 @@ video {
 
 /* ICONO Contactanos */
 .cart-icon {
-  border: 3px solid wheat;
-  padding: 18px 18px;
+  padding: 5px 8px;
   margin-top: 0px;
   border-radius: 25px;
-  height: 70px;
-  font-weight: 600;
+  height: 60px;
+  font-weight: 100;
   cursor: pointer;
 }
 
 /* main */
 main {
-  background: var(--background-section);
+  background: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,11 +140,14 @@ main {
 }
 
 .hero-info h1 {
+  background: linear-gradient(to left, #13bb2f, var(--text-negrita), var(--fire));
   font-size: 45px;
-  width: 80%; /*porcentaje de su contenedor*/
-  min-width: 500px; /*lo minimo de la pantalla*/
-  font-weight: 50; /* Relleno */
-  color: var(--text-negrita);
+  width: 65%; /*porcentaje de su contenedor*/
+  min-width: 50px; /*lo minimo de la pantalla*/
+  font-weight: 60; /* Relleno */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-info p {
@@ -158,19 +162,20 @@ main {
 }
 
 .hero-info a {
-  color: var(--background-section);
-  background-color: var(--text-negrita);
+  color: var(--text-wheat);
+  background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
   width: 120px;
-  padding: 8px 0px;
+  padding: 8px 8px;
   border-radius: 30px;
   font-size: 14px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 100;
+  cursor: pointer;
 }
 
 .hero-card {
   width: 320px;
-  background: var(--fire);
+  background: linear-gradient(to bottom, var(--text-negrita), var(--fire));
   padding: 20px;
   border-radius: 30px;
   display: flex;
@@ -187,6 +192,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  
 }
 
 .hero-card-info {
@@ -261,4 +267,35 @@ main {
 
 .hero-card-price span {
   font-weight: 700;
+}
+
+
+/* footer */
+
+footer {
+  background: var(--background);
+  color: var(--text-wheat);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+footer a,
+footer p{
+  color: var(--text-wheat);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer span {
+  font-weight: 800;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
