@@ -40,6 +40,18 @@ header {
   top: 0;
 }
 
+/* main */
+main {
+  background: var(--background 30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  width: 100%;
+}
+ 
+
 /* VIDEO */
 .sect {
   width: 50%;
@@ -113,17 +125,6 @@ header {
   cursor: pointer;
 }
 
-/* main */
-main {
-  background: var(--background);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: wheat;
-  width: 100%;
-}
- 
   /* hero */
   /* #ID
   . Nombre de clase;
@@ -221,45 +222,45 @@ main {
   }
 
 
-  /* Discover Section */
+  /* Contenido Section */
 
 #contenido {
   padding: 70px 0;
   max-width: 1200px;
 }
-
   .contenido-info {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
+    gap: 40px;
+    margin-bottom: 40px;
   }
   #contenido h2 {
     font-size: 32px;
-    width: 45%;
-    font-weight: 800;
+    width: 50%;
+    font-weight: 500;
   }
   .contenido-text {
     display: flex;
     flex-direction: column;
     width: 45%;
-    gap: 20px;
+    gap: 40px;
   }
   .contenido-text p {
     font-size: 16px;
-    font-weight: 300;
-    color: var(--text-gray);
+    font-weight: 100;
+    color: var(--text-wheat);
   }
   .contenido-text a {
-    color: var(--text-white);
-    font-weight: 600;
+    color: var(--fire);
+    font-weight: 400;
     text-decoration: underline;
   }
   
 
 /* Skills */
 #info-skills {
-  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 1px;
   padding: 10px 0;
   max-width: 2000px;
   display: flex;
@@ -467,15 +468,16 @@ main {
 /* Products Sections */
 
 #products {
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 200px 0;
   width: 100%;
 }
     #products h2 {
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       background: linear-gradient(to left, #13bb2f, var(--text-negrita), var(--fire));
       font-size: 35px;
       width: 5%; /*porcentaje de su contenedor*/
@@ -517,14 +519,14 @@ main {
 /* footer */
 
 footer {
-  background: var(--background);
+  background: var(--background 30%);
   color: var(--text-wheat);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 60px 0;
+  margin-bottom: 50px;
 }
 
 footer a,
