@@ -76,7 +76,7 @@ main {
 /*LOGO */
 .logo {
   margin: 0px;
-  margin-top: 5px;
+  margin-top: 1px;
   margin-left: 45px;
   border-radius: 1rem;
   background-size: contain;
@@ -93,7 +93,7 @@ main {
  /* NAVBAR */
 .navbar,
 .navbar-list {
-  margin-top: 0px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +114,9 @@ main {
   .navbar-list li:first-child > a {
     color: var(--text-negrita);
     font-weight: 500;
+  }
+  .navbar-list img {
+    margin-left: 0px;
   }
 
 /* ICONO Whatsapp */
@@ -235,6 +238,7 @@ main {
       font-weight: 300;
       border-radius: 10px;
       cursor: pointer;
+      margin-bottom: 25%;
     }
     .btn-add span {
         background: linear-gradient(to left, #13bb2f, var(--text-negrita), var(--fire));
