@@ -106,6 +106,63 @@
     .category {
       width: 120px;
     }
+
+
+    #portafolio {
+     margin-bottom: 10px;
+    }
+
+
+    footer  {
+      margin-left: 10%;
+      width: 85%;
+      height: 85%;
+      background: var(--background 30%);
+      color: var(--text-wheat);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+      margin-bottom: 50px;
+    }
+    .footer-container  {
+      width: 75%;
+      height: 75%;
+      margin-left: 10%;
+      margin-right: 10%;
+      background: var(--background 30%);
+      justify-content: center;
+      align-items: center;
+      gap: 30%;
+    }
+
+    .footer-links{
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-links h3 {
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(to left, #13bb2f 0%, var(--text-negrita), var(--fire));
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+             }
+    .footer-logo { 
+      margin-top: 10%;
+      margin-bottom: 15%;
+      justify-content:center;
+      }
+
+      footer p {
+        display: flex;
+        justify-content: center;
+      margin-top: 0%;
+      margin-left: 0;
+      }
+  
   }
   
   @media (max-width: 576px) {
@@ -212,8 +269,49 @@
       width: 100%;
     }
   
+   
+    footer  {
+      margin-left: 6%;
+      width: 90%;
+      height: 90%;
+      background: var(--background 30%);
+      color: var(--text-wheat);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      
+    }
+    .footer-container  {
+      width: 75%;
+      height: 75%;
+      background: var(--background 30%);
+     justify-content: center;
+      align-items: center;
+      gap: 90%;
+    }
+
+    .footer-links h3 {
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(to left, #13bb2f 0%, var(--text-negrita), var(--fire));
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+             }
+    .footer-logo { 
+    margin-top: 15%;
+    margin-bottom: 15%;
+    justify-content:center;
+    }
     .footer-links {
       flex-direction: column;
       text-align: center;
     }
+    footer p {
+      justify-content:center;
+      margin-top: 0%;
+      margin-bottom: 50px;
+       }
+
   }
