@@ -994,6 +994,10 @@ footer li,
   align-items: center;
 }
 
+.imgli {
+  gap: 40px;
+}
+
 /*LOGO */
 .footer-logo {
   background-size: contain;
