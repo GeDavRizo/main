@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+.overlay {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+#cart-toggle:checked ~ .overlay {
+    display: block;
+}
+
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
+.navbar-list li {
+    position: relative;
+    padding: 0;
+}
+
+.navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--text-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.cart-icon {
+    transition: all 0.2s ease-out;
+}
+
+.cart-icon:hover {
+    color: wheat;
+    border-color: wheat;
+    transition: all 0.2s ease-in;
+}
+
+.quantity-handler {
+    transition: all 0.2s ease-in;
+}
+
+.quantity-handler:hover {
+    cursor: pointer;
+    background-color:  rgb(228, 59, 26);
+    transition: all 0.2s ease-in;
+}
+
+.btn-add,
+.hero-info a {
+    transition: all 0.2s ease-out;
+}
+
+.btn-add:hover,
+.hero-info a:hover {
+    background-color: var(--fire);
+    transition: all 0.2s ease-in;
+}
+
+.btn-load {
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+.btn-load:hover {
+    transition: all 0.2s ease-in;
+    background-color: rgb(194, 137, 29);
+    color: black;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(200px);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(200px);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+.hero-info h1 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-info p {
+    opacity: 0;
+    animation: fade 0.5s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+    z-index: 1;
+}
+
+.hero-info a {
+    opacity: 0;
+    animation: fade 1.2s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.hero-card {
+    opacity: 0;
+    animation: fade 1.8s ease-in forwards, slide-right 1.3s ease-in-out;
+    animation-delay: 0.4s;
+}
+
+

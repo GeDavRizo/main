@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/animation.css" />
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html" target="_blank">
+                <img src="./assets/logos/CiberArteSeDav11.png" alt="dueto_sedav">
+            </a>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- menu toggle -->
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/logos/menu2.png" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
+
+            <ul class="navbar-list">
+                <li> <a href="./index.html"> CiberArte </a> </li>
+                <li> <a href="./productos.html"> Productos</a> </li>
+                <li> <a href="./bio.html"> Bio </a> </li>
+                <li> <a href="./obras.html"> Obras </a> </li>
+                <li> <a href="./contacto.html"> <img src="./assets/logos/Contactanos.png" alt="Whatsapp"
+                            class="cart-whatsapp"> </a>
+                </li>
+            </ul>
+
+            <!-- Contenido dentro del carrito -->
+            <!-- el label solo funciona por que es
+            hermano de la clase navbar -->
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/logos/carritoo.png" alt="Carrito de Compras" class="cart-carrito" />
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <!-- cart barra derecha-->
+            <div class="cart">
+                <h2>Productos de Dispositivos Musicales</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte.png" alt="💻Sinte1">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador NCMS</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.50 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte2.png" alt="💻Sinte2">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador VBMR</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.35 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte3.png" alt="💻Sinte3">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador AM2</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.60 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <h2>Productos Wearables para la Escena</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/img/zapas.png" alt="Sneakers">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Sneakers</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.20 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/oculus.png" alt="VR">
+                    <div class="item-info">
+                        <h3 class="item-title">Oculus VR</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.55 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/smartglass.png" alt="Glass">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Glass</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.66 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/sensor_pies.png" alt="Glass">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Glass</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.40 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>8.20 eTH</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+            <div class="overlay"></div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Aca viene la parte principal de la pagina -->
+        <!-- con sus respectivas secciones -->
+        <!-- hero que es contenedores (o texto dividido en 
+    titulo, texto, acci[on o bot[on) y la imagen (imagen y 
+    descripcion-superior e inferior- adntro puede tener
+    mas contenedores)-->
+        <section id="hero">
+            <!-- texto -->
+            <div class="hero-info">
+                <h1>CiberArte SeDav </h1>
+                <h2>
+                    Música Electroacústica y Arte Electrónico para la Escena
+                </h2>
+                <p>
+                    <span> Dúo SeDav </span> dueto de composición direccionado a la creación de obras
+                    musicales mixtas, acusmáticas, performáticas, escénicas, interactivas e instalativas contemporáneas
+                    vinculando
+                    las tecnologías actuales, software libre y código abierto como impulsores de trabajo co-creativo,
+                    práctico e investigativo de producción. Además ofrecemos distintos productos tecnológicos para la
+                    escena.
+                </p>
+                <div class="hero-info-boton">
+                    <button class="categoryButton" href="#">💻Be SeDav</button>
+                </div>
+            </div>
+
+            <!-- Imagen -->
+            <div class="hero-img-background-portada">
+                <div class="hero-img-portada">
+                    <img src="./assets/img/Portada.jpg" alt="SeDav">
+                </div>
+            </div>
+            <div>
+                <div class="header__socials">
+                    <a href="#" class="header__social" target="_blank" rel="GeDav">
+                        <img src="./assets/logos/soundcloud.png" alt="github" title="github"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100067321148084" class="header__social1"
+                        target="_blank" rel="GeDav">
+                        <img src="./assets/logos/facebook.png" alt="facebook" title="linkedin"></a>
+                    <a href="https://https://www.instagram.com/dueto_sedav/" class="header__social2" target="_blank"
+                        rel="GeDav">
+                        <img src="./assets/logos/instagram.png" alt="instagram" title="instagram"></a>
+                </div>
+        </section>
+
+        <!-- Contenido -->
+        <section id="contenido">
+            <div class="contenido-info">
+                <h2>Descubre nuestros productos tecnológicos para la escena y la creación de obras tecnológicas
+                    escénicas artísticas, creativas y colaborativas.</h2>
+                <div class="contenido-text">
+                    <p>
+                        Tendras la oportunidad comprar nuestros productos tecnológicos-artísticos desde distintos
+                        tópicos, entre ellos: Tecnología, Música, Escena, Artes Visuales y Cine
+                        entre otros a tu gusto, y de este modo, acceder a beneficios exclusivos por ser
+                        parte de nuesta red SeDav.
+                    </p>
+                    <a href="./contacto.html" target="_blank"> Contáctanos</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Cards Beneficios -->
+        <section id="info">
+            <h2>BENEFICIOS DE SER <br> PARTE DE LA RED DEL <br>
+                DUETO SEDAV</h2>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/logos/choose.svg" alt="Icono NFTs" />
+                    <h3>Elije tu producto</h3>
+                    <p>
+                        Una vez que haya seleccionado tu producto que mejor se adapte a tus interéses
+                        podras dar click en comprar y añadirlos al carrito.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/logos/pagina.svg" alt="Icono NFTs" />
+                    <h3>Red SeDav</h3>
+                    <p>
+                        A partir de ahora, formás parte de la Red SeDav y vas
+                        a poder acceder a diferentes productos exclusivos para ti
+                        como: Productos tecnológicos adaptables para la escena, composición y arreglos de sonodirdades
+                        musicales,
+                        trajes wearables adaptables para la escena y el mantenimiento de tus productos, entre otros más.
+                        <a href="./productos.html" target="_blank"> Descubrelos </a>
+                    </p>
+
+                </div>
+                <div class="info-card">
+                    <img src="./assets/logos/red.svg" alt="Red GeDav" />
+                    <h3>Configura tu Wallet</h3>
+                    <p>
+                        Después de elegír y realizar los pasos anteriores y añadido los productos, configurado la
+                        billetera
+                        virtual de tu elección y envía tu pago a el alias: user.estriga.LEMON
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <h2>PRODUCTOS</h2>
+            <div class="categories">
+                <button class="category active">✨Todas</button>
+                <button class="category">💻Tecnología</button>
+                <button class="category">🎹Música</button>
+                <button class="category">💃Escena</button>
+                <button class="category">🎨Visuales</button>
+                <button class="category">🎬Cine</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>Hecho con ❤️ <br><span> -Be GeDav-</span></p>
+    </footer>
+</body>
+
+</html>

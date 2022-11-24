@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/animation.css" />
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./index.html" target="_blank">
+                <img src="./assets/logos/CiberArteSeDav11.png" alt="dueto_sedav">
+            </a>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- menu toggle -->
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/logos/menu2.png" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
+            <ul class="navbar-list">
+                <li> <a href="./index.html"> CiberArte </a> </li>
+                <li> <a href="./productos.html"> Productos</a> </li>
+                <li> <a href="./bio.html"> Bio </a> </li>
+                <li> <a href="./obras.html"> Obras </a> </li>
+                <li> <a href="./contacto.html"> <img src="./assets/logos/Contactanos.png" alt="Whatsapp"
+                            class="cart-whatsapp"> </a>
+                </li>
+            </ul>
+
+            <!-- Contenido dentro del carrito -->
+            <!-- el label solo funciona por que es
+            hermano de la clase navbar -->
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/logos/carritoo.png" alt="Carrito de Compras" class="cart-carrito" />
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <!-- cart barra derecha-->
+            <div class="cart">
+                <h2>Productos de Dispositivos Musicales</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte.png" alt="💻Sinte1">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador NCMS</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.50 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte2.png" alt="💻Sinte2">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador VBMR</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.35 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/logos/sinte3.png" alt="💻Sinte3">
+                    <div class="item-info">
+                        <h3 class="item-title">🎹Sintetizador AM2</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.60 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <h2>Productos Wearables para la Escena</h2>
+
+                <div class="cart-item">
+                    <img src="./assets/img/zapas.png" alt="Sneakers">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Sneakers</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.20 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/oculus.png" alt="VR">
+                    <div class="item-info">
+                        <h3 class="item-title">Oculus VR</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.55 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/smartglass.png" alt="Glass">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Glass</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.66 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets/img/sensor_pies.png" alt="Glass">
+                    <div class="item-info">
+                        <h3 class="item-title">Smart Glass</h3>
+                        <p class="item-bid">Oferta Actual</p>
+                        <span class="item-price">0.40 eTH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>8.20 eTH</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="obra1">
+            <!-- texto -->
+            <div class="obra1-info">
+                <h2>NeuroCiborg </h2>
+                <h3> Teatro Galpon FACE </h3>
+                <p>
+                    <span>NeuroCiborg </span> explora el mundo del cerebro en 💃escena. Ejemplifica
+                    los tipos de neuronas 🧫(motoneuronas, neuronas sensoriales, interneuronas, seudo-unipolar,
+                    unipolar, bipolar, multipolares, piramidal). Las neuronas se pueden llegar a clasificar de muchas
+                    formas,
+                    las más comunes serian por su función y por su forma, los intérpretes tratan de recrear sus formas
+                    de comunicación
+                    a través del movimiento y el sonido que se activa desde un celular. Si miramos la función de una
+                    neurona, se reduce a la comunicación
+                    de impulsos nerviosos, pero la procedencia, el destino y la finalidad de estas señales permite
+                    clasificarlas en diferentes grupos. La
+                    computadora principal va recibiendo los datos y a través de la música activada por una flauta
+                    traversa, se activa la imagen de cada neurona.
+                </p>
+                <div class="hero-info-boton">
+                    <button class="categoryButton" href="#">🎥Video</button>
+                </div>
+            </div>
+            <div class="obra1-img">
+                <div class="obra1-img-i">
+                    <img src="./assets/img/4.jpg" alt="SeDav">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="obra2">
+            <div class="obra2-info">
+                <h2>Invierno Gestual </h2>
+                <h3> Teatro Espacio Utaki </h3>
+                <p>
+                    <span>Invierno Gestual </span> es la recuperación del gesto forzado de nuestro país Colombia,
+                    en donde si no ríes esta pasando un problema grave, una risa dolorida, la tortura de no decir nada
+                    y sonreir, el dolor de callar para no morir, un gesto sin risa "es preocupante". En Invierno
+                    todo muere para renacer, un momento largo de reflexión en Argentina para recuperar nuestro gesto
+                    normal. El intérprete a través de su cara realiza la 💃escena y la computadora registra sus gestos
+                    y activa la música y la imagen.
+                </p>
+                <div class="hero-info-boton">
+                    <button class="categoryButton" href="#">🎥Video</button>
+                </div>
+            </div>
+            <div class="obra2-img">
+                <div class="obra2-img-i">
+                    <img src="./assets/img/17.jpg" alt="SeDav">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="obra3">
+            <div class="obra3-info">
+                <h2>Kinesferas Audibles Multidimensionalidades Comunicativas </h2>
+                <h3> Teatro Margarita Xirgu UNTREF </h3>
+                <p>
+                    <span>“Kinesferas Audibles Multidimensionalidades Comunicativas” </span> del Colectivo
+                    Fonocinesis,Teatro Xirgu el domingo 12 de Agosto 2018.
+                    Una esfera sonorocinética nos rodea en nuestra cotidianidad, nos envuelve y nos conecta desde las
+                    filigranas de los multiversos, nos atraviesa y nos convierte en cyborgs hiper-sensitivos…; cuerpos
+                    post-humanos inmerso en redes interconectadas de datos que navegan en este mar de vida, de
+                    instancias efímeras en una búsqueda incansable de nuestros nuevos códigos genuinos, en la cultura
+                    cibernética de nuestra realidad...; somos máquinas biotecnológicas y experimentos constantes a una
+                    nueva puerta:
+                    Vivimos en una época de “puente” que poco a poco se va abriendo a nuevas existencias aledañas y se
+                    va revelando para “muchos deprimidos” en un: “seguir muriendo en el intento y creer que estamos
+                    gobernados por un solo sistema”, para esta Meta-obra es comunicarnos desde el descubrimiento de
+                    nuestros cuerpos “entre” multidimensionales: El ser-post-humano-cinético-sonoro-genuino. <br> <br>
+                    Dirección: Germán David Rizo.
+                    Composición musical y programación: Rodrigo Arango Ayala, Juan Sebastian Rizo y Germán David Rizo.
+                    Coreógrafía: Germán David Rizo Arévalo.
+                    Intérpretes músico-dancísticos: Victoria Morante, Luciana Bozzo, Rodrigo Aragon Ayala, Joaco
+                    Barroso, Gabriela De Angelis, Juan Sebastián Rizo y Germán David Rizo.
+                    Audiovisuales: Silvia Prieto.
+                    Vestuario y maquillaje: Mimi Nailst.
+                    Vídeo y fotografía: Alejandro Ayala y Cocua Producciones.
+                    Formación de Artistas
+                    Contemporáneos para la Escena
+                    FACE
+
+                </p>
+                <div class="hero-info-boton">
+                    <button class="categoryButton" href="#">🎥Video</button>
+                </div>
+            </div>
+            <div class="obra1-img">
+                <div class="obra1-img-i">
+                    <img src="./assets/img/12.jpg" alt="SeDav">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="obra4">
+            <div class="obra4-info">
+                <h2>Condor Pasa </h2>
+                <h3> Teatro Quinta-Paredes <br> Bogotá Colombia </h3>
+                <p>
+                    <span>Condor Pasa </span> es una composición musical para lienzo, dirección, flauta traversa, 2
+                    piano y voz (contralto) en donde
+                    se exploran técnicas de la música contemporánea y el movimiento de los intérpretes, explorando la
+                    investigació del término
+                    Aquinetofonías (acuñado por Germán David Rizo A.) que explora la relación simultanea de la Luz, el
+                    Movimiento y el Sonido
+                    en la 💃Escena.
+                </p>
+                <div class="hero-info-boton">
+                    <button class="categoryButton" href="#">🎥Video</button>
+                </div>
+            </div>
+            <div class="obra4-img">
+                <div class="obra4-img-i">
+                    <img src="./assets/img/15.jpg" alt="SeDav">
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>Hecho con ❤️ <br><span> -Be GeDav-</span></p>
+    </footer>
+</body>
+
+</html>
